@@ -4,7 +4,11 @@ You can run this code on your own machine or on Google Colab.
 
 1. **Local option:** If you choose to run locally, you will need to install MuJoCo and some Python packages; see [installation.md](../hw1/installation.md) from homework 1 for instructions.
 
-2. **Colab:** The first few sections of the notebook will install all required dependencies. You can try out the Colab option by clicking the badges below:
+2. **Colab (recommended if you don't want to use GPU locally):** The notebooks install dependencies and run on Colab's CPU/GPU. To use your **local code** in Colab either:
+   - **Option A:** Push your code to a GitHub fork, then in the notebook's "clone homework repo" cell change the URL to your fork (e.g. `https://github.com/YOUR_USERNAME/16831-S26-HW.git`), or  
+   - **Option B:** After cloning and installing (cells 1–5), upload your modified files from your Mac: use the Colab file browser (left sidebar) and upload `dqn_agent.py`, `dqn_critic.py`, `argmax_policy.py` into `hw_16831/16831-S26-HW/hw3/rob831/agents/`, `.../critics/`, `.../policies/` respectively, overwriting the cloned files.
+
+   Then run the rest of the notebook. **Part I (DQN):** use the "run all DQN experiments" cell to run both DQN and Double DQN on LunarLander in one go. **Part II:** run the actor-critic cells as usual.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmuroboticsdrl/16831-S26-HW/blob/main/hw3/rob831/scripts/run_hw3_dqn.ipynb) **Part I (Q-learning)**  
 
